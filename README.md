@@ -2,48 +2,58 @@
 
 
 <h2>Description</h2>
-Project consists of creating an Active Directory Home Lab environment through the use of Virtual Machines.  With the use of Oracle VM Virtual Box I was able to create a Windows 10 Server and a Windows 10 Client to configure Active Directory Networking.  
+Project consists of creating an Active Directory Home Lab environment through the use of Virtual Machines.  With the use of Oracle VM Virtual Box I was able to create a Windows 10 Server and a Windows 10 Client to configure Active Directory Networking.  After setting up the architechture of the network environment I used a PowerShell script to create Users to be added into the Active Directory. 
 <br />
 
 
 <h2>Languages and Utilities Used</h2>
 
 - <b>PowerShell</b> 
-- <b>Diskpart</b>
+- <b>Windows Service Manager</b>
+- <b>Oracle VM Virtual Box</b>
 
 <h2>Environments Used </h2>
 
 - <b>Windows 10</b> (21H2)
+- <b>Windows 10 Server</b> (21H2)
 
 <h2>Program walk-through:</h2>
 
 <p align="center">
-Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Create Virtual Machine environments for both WINDOWS 10 SERVER (2019):DC and WINDOWS 10 (2019):CLIENT1<br/>
+<img src="https://imgur.com/FcCwLNo.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Rename Ethernet Adapters and Set Internal NIC to desired IP,Mask,Gateway,DNS:  <br/>
+<img src="https://imgur.com/odaGn1E.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Configure Local Server for Active Directory Domain Services: <br/>
+<img src="https://imgur.com/rXPlLxA.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Configure Local Server for Remote Acces and install NAT:  <br/>
+<img src="https://imgur.com/WN2kGxm.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Configure Local Server for DHCP:  <br/>
+<img src="https://imgur.com/DEo4T6K.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Create Scope for DHCP between 172.16.0.100-200:  <br/>
+<img src="https://imgur.com/3SgUQeW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Run PowerShell Script with while Unrestricted to add Users from .txt file:  <br/>
+<img src="https://imgur.com/BL2XUHp.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Observe created Users and DHCP Address Lease:  <br/>
+<img src="https://imgur.com/xkw7NwI.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Confirm connection in CLIENT1 under created User: jbezos and check for network connectivity:  <br/>
+<img src="https://imgur.com/WO1FCIL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
 <!--
