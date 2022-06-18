@@ -14,8 +14,8 @@ Project consists of creating an Active Directory Home Lab environment through th
 
 <h2>Environments Used </h2>
 
-- <b>Windows 10</b> (21H2)
-- <b>Windows 10 Server</b> (21H2)
+- <b>Windows 10</b>
+- <b>Windows 10 Server</b> 
 
 <h2>Program walk-through:</h2>
 
