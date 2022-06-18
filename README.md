@@ -44,7 +44,7 @@ Create Scope for DHCP between 172.16.0.100-200:  <br/>
 <img src="https://imgur.com/3SgUQeW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Run PowerShell Script with while Unrestricted to add Users from .txt file:  <br/>
+Run PowerShell Script while Unrestricted to add Users from .txt file:  <br/>
 <img src="https://imgur.com/BL2XUHp.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
