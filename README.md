@@ -2,7 +2,7 @@
 
 
 <h2>Description</h2>
-Project consists of creating an Active Directory Home Lab environment through the use of Virtual Machines.  With the use of Oracle VM Virtual Box I was able to create a Windows 10 Server and a Windows 10 Client to configure Active Directory Networking.  After setting up the architechture of the network environment I used a PowerShell script to create Users to be added into the Active Directory. 
+Project consists of creating an Active Directory Home Lab environment through the use of Virtual Machines.  With the use of Oracle VM Virtual Box I was able to create a Windows 10 Server and a Windows 10 Client to configure Active Directory Networking.  After setting up the architechture of the network environment I used a simple PowerShell script to create Users, with attributes, to be implemented into the Active Directory. 
 <br />
 
 
